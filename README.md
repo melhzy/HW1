@@ -5,7 +5,7 @@ Github Repository: https://github.com/melhzy/HW1
 
 Website URL: http://79.170.44.205/sqlnuts.net/
 
-Major technologies used: HTML, CSS, JavaScript;
+Major technologies used: HTML, CSS, JavaScript, FTP;
 
 Website design summary:
 
