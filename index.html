@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+    <title>Operational Status Tracking</title>
+	<link rel="shortcut icon" href="images/tIcon.ico" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+	
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Baskerville, Caslon, Garamond, Minion;
+		font-size:120%;
+		background-color:#FDF3E7;
+    }
+	
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	li {
+		float: left;
+	}
+
+	a.naviitem:link, a.naviitem:visited {
+		display: block;
+		width: 199px;
+		font-weight: bold;
+		color: #FFFFFF;
+		background-color: #F44336;
+		text-align: center;
+		padding: 4px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	a.naviitem:hover, a.naviitem:active {
+		background-color: #C00000;
+	}
+	
+	.naviitem {
+		border: 2px solid white;
+	}
+	
+	#center {
+		margin:auto;
+		width: 80%;
+		padding:2%;
+		background-color:#FFFFFF;
+	}
+	
+	#logo {
+		width:100%;
+		margin-top:1%;
+	}
+	
+	#mainBody {
+		width:100%;
+	}
+	
+	a.moreLink:link, a.moreLink:visited {
+		margin:0;
+		width: 60px;
+		font-weight: bold;
+		color: navy;
+		text-align: center;
+		padding: 5px;
+		text-decoration: none;
+	}
+
+	a.moreLink:hover, a.moreLink:active {
+		text-decoration:underline;
+	}
+	
+	.topBody {
+		background-color: lightgrey;
+		clear:both;
+		padding: 5px 10px 5px 10px;
+		border-color:#008CBA;
+		border-style:solid;
+		border-width: 4px 4px 4px 4px;
+		margin: 0;
+		margin-bottom: 4px;
+		position:relative;
+
+	}
+
+	#b12 {
+		margin:0;
+		margin-bottom:1%;
+		padding:0;
+		position:relative;
+
+	}
+	
+	
+	#bottomHr {
+		clear:both;
+	}
+	
+	.leftBody {
+		background-color: lightgrey;
+		width: 46%;
+		padding: 5px;
+		border-color:#008CBA;
+		border-style:solid;
+		border-width: 4px 4px 4px 4px;
+		margin: 0;
+		margin-bottom:1%;
+		margin-top:0.5%;
+		float:left;
+		position:relative;
+		overflow: hidden;
+
+	}
+
+	.rightBody {
+		background-color: lightgrey;
+		width: 46%;
+		padding: 5px;
+		border-color:#008CBA;
+		border-style:solid;
+		border-width: 4px 4px 4px 4px;
+		margin: 0;
+		margin-bottom:1%;
+		margin-top:0.5%;
+		float:right;
+		position:relative;
+		overflow: hidden;
+	}
+	
+	.leftComment {
+		width: 46%;
+		padding: 0;
+		margin: 0;
+		float:left;
+		position:relative;
+
+	}
+
+	.rightComment {
+		width: 46%;
+		padding: 0;
+		margin: 0;
+		float:right;
+		position:relative;
+	}
+	
+	.fixedHeight
+		{
+			height:120px;
+		}
+		
+	.more {
+		float:right;
+	}
+	
+	#updateTime {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	
+	.summaryTitle {
+		font-weight:bold;
+		font-size:110%;
+	}
+	
+	.button {
+		background-color: #3C948B;
+		margin-top:0;
+		border: none;
+		color: white;
+		padding: 5px 30px;
+		text-align: center;
+		font-size:90%;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	#topBodyText {
+	  width:99.4%;
+	  clear:both;
+	  margin-bottom:0;
+	}
+
+	.textwrapper {
+	  width:99.99%;
+	  clear:both;
+	  margin-bottom:0;
+	  border-bottom:0;
+	}
+	
+    </style>    
+</head>
+
+<body>
+<div id="center">
+	<div id="top">
+		
+		<div class="logoDiv">
+			<img id="logo" src="images/tmLogoLong.png" alt="Tough Motor - Operational Performance Tracking">
+		</div>
+		<div id="updateTime">
+		<p>
+			Last updated as of:
+			<span id="updateCurrent">
+				<script>
+				var time = new Date().getTime();
+				var date = new Date(time);
+				document.write(date.toString());
+				</script>
+			</span>
+		</p>
+		</div>
+		
+		<div id="navigation">
+			<ul>
+			  <li><a class="naviitem" href="#home">Home</a></li>
+			  <li><a class="naviitem" href="#sales">Sales</a></li>
+			  <li><a class="naviitem" href="#customer">Customer</a></li>
+			  <li><a class="naviitem" href="#manufact">Manufacturing</a></li>
+			  <li><a class="naviitem" href="#market">Marketing</a></li>
+			  <li><a class="naviitem" href="#about">About</a></li>
+			</ul>
+		</div>
+		<hr />
+		
+	</div>
+
+	<div id="content">
+		<div id="mainBody">
+			<p id="b1" class="topBody">
+				<span class="summaryTitle">Overall Profits & Losses</span>
+				<span class="more">
+					<a class="moreLink" href="#profitsSummary">more...</a>
+				</span>
+				<br />
+				<span id="b1Summary" class="summary">
+					Profits and losses summary. In 2015 the overall profits and losses are summarized as follows:
+				</span>
+			</p>
+			
+			<form id="PL_Summary">
+			<p id="b12" class="topBody2">
+					<div style="display: block;">
+						<div class="textWrapper"><textarea id="topBodyText" cols="5" rows="5" placeholder="Please enter Tough Motor's overall profits and losses information."></textarea></div>
+					</div>
+				<br />
+				<input id="b1Submit" type="button" class="button" value="Submit">
+				<input id="b1Clear" type="button" class="button" value="Clear">
+			</p>
+			
+			<script type="text/javascript">
+
+				document.getElementById("b1Submit").onclick=function() {
+					if (document.getElementById("topBodyText").value=="") 
+					{
+						alert("You must enter your comment in the summary section!");
+						}
+					else 
+					{
+						var x = document.getElementById("topBodyText").value;
+						document.getElementById("b1Summary").innerHTML=x;
+						var time = new Date().getTime();
+						var date = new Date(time);
+						document.getElementById("updateCurrent").innerHTML=(date.toString());
+						alert("You have successfully updated Tough Motor's overall profits and losses summary!");
+					}
+				}
+						
+				document.getElementById("b1Clear").onclick=function() {
+					document.getElementById("topBodyText").value="";
+				}
+			</script>
+			</form>
+			
+			<p id="b2" class="leftBody fixedHeight">
+				<span class="summaryTitle">Sales</span>
+				<span class="more">
+					<a class="moreLink" href="#salesSummary">more...</a>
+				</span>
+				<br />
+				<span id="b2Summary" class="summary">
+					Sales summary. In 2015 the overall sales are summarized as follows:
+				</span>
+			</p>
+		
+			<p id="b3" class="rightBody fixedHeight">
+				<span class="summaryTitle">Customer Services</span>
+				<span class="more">
+					<a class="moreLink" href="#customerSummary">more...</a>
+				</span><br />
+				<span id="b3Summary" class="summary">
+					Customer services summary. In 2015 the overall customer services are summarized as follows:
+				</span>
+			</p>
+	
+			<p id="b4" class="leftBody fixedHeight">
+				<span class="summaryTitle">Manufacturing</span>
+				<span class="more">
+					<a class="moreLink" href="#manufacturingSummary">more...</a>
+				</span>
+				<br />
+				<span id="b4Summary" class="summary">
+					Manufacturing summary. In 2015 the overall manufacturing results are summarized as follows:
+				</span>
+			</p>
+
+			<p id="b5" class="rightBody fixedHeight">
+				<span class="summaryTitle">Marketing</span>
+				<span class="more">
+					<a class="moreLink" href="#marketingSummary">more...</a>
+				</span>
+				<br />
+				<span id="b5Summary" class="summary">
+					Marketing summary. In 2015 the overall marketing activities are summarized as follows:
+				</span>
+			</p>
+			
+			<p id="bottomHr"><hr /></p>
+			<p>ISEM-565-50 ©Copyright @Ziyuan 156230 <a href="mailto:zhuang@my.harrisburgu.edu?subject=I love coding &body=Grade A is my only goal!">zhuang@my.harrisburgu.edu</a></p>
+		</div>
+		
+	</div>
+
+</div>
+</body>
+
+</html>
