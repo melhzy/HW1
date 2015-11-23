@@ -9,39 +9,39 @@ Website design summary:
 
 Header:
 
-  URL Icon;
+  -URL Icon;
   
-  Title: Tough Motor - Operational Performance Tracking;
+  -Title: Tough Motor - Operational Performance Tracking;
   
-  Report last update time;
+  -Report last update time;
   
-  Navigation: Home|Sales|Customer|Manufacturing|Marketing|About;
+  -Navigation: Home|Sales|Customer|Manufacturing|Marketing|About;
 
 Body:
 
-  Profits and Sales Information;
+  -Profits and Sales Information;
   Profits and Sales Textbox;
   "More" link;
   Submit and Clear button;
   
-  Sales Information;
+  -Sales Information;
   "More" link;
   
-  Customer Information;
+  -Customer Information;
   "More" link;
   
-  Manufacturing Information;
+  -Manufacturing Information;
   "More" link;
   
-  Marketing Information;
+  -Marketing Information;
   "More" link;
   
 Footer:
 
-  Course ID;
+  -Course ID;
   
-  Copyright @Ziyuan;
+  -Copyright @Ziyuan;
   
-  Student ID;
+  -Student ID;
   
-  Email ID;
+  -Email ID;
