@@ -1,7 +1,9 @@
 # HW1;
 This Ziyuan Huang's HW1 of ISEM 551;
 
-URL: http://79.170.44.205/sqlnuts.net/
+Github Repository: https://github.com/melhzy/HW1
+
+Website URL: http://79.170.44.205/sqlnuts.net/
 
 Major technologies used: HTML, CSS, JavaScript;
 
